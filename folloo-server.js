@@ -4,9 +4,8 @@ var express 				= require("express"),
 	tokenGenerator 			= new FirebaseTokenGenerator(process.env.FIREBASE_SECRET);
 
 app.get('/authToken', function(req, res){
-   console.log("Received request: " + req);
-   var token = tokenGenerator.createToken({uid: "YYYYYYYY", some: "arbitrary", data: "here"});
-   console.log("Token: " + token);
+   console.log("Received request for uid: " + req.uid);
+   var token = tokenGenerator.createToken({uid: req.uid});
    res.json(token);
 });
 
