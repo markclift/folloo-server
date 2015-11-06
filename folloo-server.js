@@ -1,7 +1,8 @@
 var express 				= require("express"),
 	app 					= express(),
 	FirebaseTokenGenerator 	= require("firebase-token-generator"),
-	tokenGenerator 			= new FirebaseTokenGenerator("wlGIQ7r7OcsDABHDAjxxyBze5nYO8BXCKod5JQJI");
+	config					= require("config"),
+	tokenGenerator 			= new FirebaseTokenGenerator(config.firebaseSecret);
 
 app.get('/authToken', function(req, res){
    console.log("Received request: " + req);
