@@ -10,6 +10,6 @@ app.get('/authToken', function(req, res){
    res.json(token);
 });
 
-app.listen(8080, function() {
+app.listen(process.env.PORT || 8080, function() {
 	console.log("I'm listening");
 });
