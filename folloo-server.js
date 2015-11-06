@@ -11,6 +11,6 @@ app.get('/authToken', function(req, res){
    res.json(token);
 });
 
-app.listen(3000, function() {
+app.listen(8080, function() {
 	console.log("I'm listening");
 });
