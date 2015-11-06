@@ -1,0 +1,8 @@
+{
+  "name": "folloo-server",
+  "version": "1.0.0",
+  "dependencies": {
+    "express": "^4.13.3",
+    "firebase-token-generator": "^2.0.0"
+  }
+}

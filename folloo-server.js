@@ -1,4 +1,4 @@
-var express 				= require("express"),
+var express 				= require("/usr/local/lib/node_modules/express"),
 	app 					= express(),
 	FirebaseTokenGenerator 	= require("firebase-token-generator"),
 	config					= require("config"),
