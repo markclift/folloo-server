@@ -4,5 +4,11 @@
   "dependencies": {
     "express": "^4.13.3",
     "firebase-token-generator": "^2.0.0"
+  },
+  "engines": {
+    "node": "5.0.0"
+  },
+  "scripts": {
+    "start": "node folloo-server.js"
   }
 }
