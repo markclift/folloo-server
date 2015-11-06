@@ -1,7 +1,7 @@
 var express 				= require("/usr/local/lib/node_modules/express"),
 	app 					= express(),
 	FirebaseTokenGenerator 	= require("firebase-token-generator"),
-	config					= require("config"),
+	config					= require("./config"),
 	tokenGenerator 			= new FirebaseTokenGenerator(config.firebaseSecret);
 
 app.get('/authToken', function(req, res){
